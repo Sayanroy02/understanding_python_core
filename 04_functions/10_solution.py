@@ -6,4 +6,4 @@ def factorial(n):
     
 number = int(input("Enter a number to find its factorial: "))
 result = factorial(number)
-print("The factorial of ", number , " is " , result)
+print("The factorial of number ", number , " is " , result)

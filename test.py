@@ -48,3 +48,4 @@ if __name__ == "__main__":
     text, soup = extract_all_text(html)
     structured = extract_structured(soup)
     save_outputs(html, text, structured)
+

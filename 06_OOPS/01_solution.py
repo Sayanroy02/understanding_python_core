@@ -72,4 +72,21 @@ print(isinstance(my_electric_car, Car))  # True
 print(isinstance(my_electric_car, Electric_car))  # True
 
 
+#q10 multiple inheritence
 
+class Battery():
+    def battery_capacity(self):
+        return "Battery capacity is 75kWh"
+
+
+class Engine():
+    def Engine(self):
+        return "Engine capacity is 2000cc"
+
+#here this is example of multiple inheritence
+class Hybrid_car(Car , Battery , Engine):
+    pass # Hybrid_car class inheriting from Car , Battery and Engine class [pass means empty class]
+
+my_hybrid_car = Hybrid_car("Toyota" , "Prius") 
+print(my_hybrid_car.battery_capacity()) # Accessing method from Battery class
+print(my_hybrid_car.Engine()) # Accessing method from Engine class
